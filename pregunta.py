@@ -34,7 +34,7 @@ def ingest_data():
                 fila["principales_palabras_clave"]=fila["principales_palabras_clave"][:-1]
     if len(fila) > 0:
         Rta.append(fila)
-    df=pd.DataFrame(Rta)
+    datos=pd.DataFrame(Rta)
     return datos
 
 
