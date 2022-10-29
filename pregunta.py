@@ -18,7 +18,7 @@ def ingest_data():
     datos.drop([0,1,2],axis=0, inplace=True)
     Rta=[]
     fila = {}
-    for j in range(len(df)):
+    for j in range(len(datos)):
         line=Rta.iloc[j][0].strip().split()
         if line[0].isnumeric():
             if len(fila)>0:
