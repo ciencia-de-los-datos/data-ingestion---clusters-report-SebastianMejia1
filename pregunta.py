@@ -14,12 +14,12 @@ import pandas as pd
 def ingest_data():
 
     datos=pd.read_table("clusters_report.txt",header=None)
-    j=0
+    i=0
     datos.drop([0,1,2],axis=0, inplace=True)
     Rta=[]
     fila = {}
-    for j in range(len(datos)):
-        line=Rta.iloc[j][0].strip().split()
+    for i in range(len(datos)):
+        line=Rta.iloc[i][0].strip().split()
         if line[0].isnumeric():
             if len(fila)>0:
                 Rta.append(fila)
